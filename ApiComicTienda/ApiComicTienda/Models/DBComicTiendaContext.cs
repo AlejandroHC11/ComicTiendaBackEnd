@@ -18,6 +18,7 @@ namespace ApiComicTienda.Models
 
         public virtual DbSet<Account> Accounts { get; set; } = null!;
         public virtual DbSet<Comic> Comics { get; set; } = null!;
+        public virtual DbSet<Franchise> Franchises { get; set; } = null!;
         public virtual DbSet<Receipt> Receipts { get; set; } = null!;
         public virtual DbSet<SalesDetail> SalesDetails { get; set; } = null!;
 
@@ -36,7 +37,7 @@ namespace ApiComicTienda.Models
             {
                 entity.ToTable("Account");
 
-                entity.HasIndex(e => e.AccountName, "UQ__Account__406E0D2E85F888B5")
+                entity.HasIndex(e => e.AccountName, "UQ__Account__406E0D2E1B14F629")
                     .IsUnique();
 
                 entity.Property(e => e.AccountName)
@@ -50,13 +51,7 @@ namespace ApiComicTienda.Models
 
             modelBuilder.Entity<Comic>(entity =>
             {
-                entity.Property(e => e.ComicId).ValueGeneratedNever();
-
                 entity.Property(e => e.ComicName)
-                    .HasMaxLength(255)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Franchise)
                     .HasMaxLength(255)
                     .IsUnicode(false);
 
@@ -67,35 +62,29 @@ namespace ApiComicTienda.Models
                 entity.Property(e => e.Price).HasColumnType("decimal(18, 0)");
             });
 
+            modelBuilder.Entity<Franchise>(entity =>
+            {
+                entity.ToTable("Franchise");
+
+                entity.Property(e => e.FranchiseName)
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+            });
+
             modelBuilder.Entity<Receipt>(entity =>
             {
                 entity.ToTable("Receipt");
 
-                entity.Property(e => e.Account)
-                    .HasMaxLength(255)
-                    .IsUnicode(false);
-
                 entity.Property(e => e.DateIssued).HasColumnType("date");
 
                 entity.Property(e => e.TotalAmount).HasColumnType("decimal(18, 0)");
-
-                entity.HasOne(d => d.AccountNavigation)
-                    .WithMany(p => p.Receipts)
-                    .HasPrincipalKey(p => p.AccountName)
-                    .HasForeignKey(d => d.Account)
-                    .HasConstraintName("FK__Receipt__Account__4222D4EF");
             });
 
             modelBuilder.Entity<SalesDetail>(entity =>
             {
                 entity.ToTable("SalesDetail");
 
-                entity.Property(e => e.UnitPrice).HasColumnType("decimal(10, 2)");
-
-                entity.HasOne(d => d.Comic)
-                    .WithMany(p => p.SalesDetails)
-                    .HasForeignKey(d => d.ComicId)
-                    .HasConstraintName("FK__SalesDeta__Comic__3F466844");
+                entity.Property(e => e.UnitPrice).HasColumnType("decimal(18, 0)");
             });
 
             OnModelCreatingPartial(modelBuilder);

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q8zqM551CfBWMtCmPH4DGImjNaBrh04Y7Q++4xQI+IpoYrUJnz9CLg1GgkIMZF0kArfqdXGHenOc0IEQztGSpw==",
+  "dgSpecHash": "cC3/HnowQuzhK0mcmJfWvQrtgxYa1hNXMx5peKZ5h7+RSFLyRomf3rgscsgWUNls0Bm8U2eXT6oXiinhS+9SHA==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\OneDrive\\Escritorio\\ApiComicTienda\\ApiComicTienda\\ApiComicTienda\\ApiComicTienda.csproj",
   "expectedPackageFiles": [
@@ -36,6 +36,7 @@
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\6.5.0\\swashbuckle.aspnetcore.annotations.6.5.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",

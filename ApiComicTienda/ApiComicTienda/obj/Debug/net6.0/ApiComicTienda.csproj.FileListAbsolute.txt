@@ -66,3 +66,4 @@ C:\Users\HP\OneDrive\Escritorio\ApiComicTienda\ApiComicTienda\ApiComicTienda\obj
 C:\Users\HP\OneDrive\Escritorio\ApiComicTienda\ApiComicTienda\ApiComicTienda\obj\Debug\net6.0\ApiComicTienda.pdb
 C:\Users\HP\OneDrive\Escritorio\ApiComicTienda\ApiComicTienda\ApiComicTienda\obj\Debug\net6.0\ApiComicTienda.genruntimeconfig.cache
 C:\Users\HP\OneDrive\Escritorio\ApiComicTienda\ApiComicTienda\ApiComicTienda\obj\Debug\net6.0\ref\ApiComicTienda.dll
+C:\Users\HP\OneDrive\Escritorio\ApiComicTienda\ApiComicTienda\ApiComicTienda\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll

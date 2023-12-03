@@ -9,7 +9,6 @@ namespace ApiComicTienda.Models
         public int? ComicId { get; set; }
         public int? Quantity { get; set; }
         public decimal? UnitPrice { get; set; }
-
-        public virtual Comic? Comic { get; set; }
+        public int? SalesDetailNumber { get; set; }
     }
 }
